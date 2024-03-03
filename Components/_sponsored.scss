@@ -1,0 +1,15 @@
+.sponsored {
+  @media (max-width: 1125px) {
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  @media (max-width: 720px) {
+    flex-direction: row;
+    gap: 0rem;
+  }
+}
+.brand {
+  margin-block: -3rem;
+  width: 50%;
+}

@@ -1,0 +1,59 @@
+.subscribe {
+  position: relative;
+  width: 100%;
+  border-radius: var(--Radius-Desktop-lg);
+  background-color: var(--color-Primary-white);
+  align-items: center;
+  justify-content: space-around;
+  @media (max-width: 720px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--Gap-Desktop-sl);
+    text-align: center;
+  }
+  @media (max-width: 380px) {
+    & .heading-2 {
+      font-size: var(--Font-Desktop-H5);
+      font-weight: 500;
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    & .para {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+  background: #0d1025;
+  z-index: -2;
+  filter: blur(2.7rem);
+  opacity: 0.3;
+  top: var(--Gap-Desktop-lg);
+}
+.subscribe-bt {
+  position: relative;
+  text-align: center;
+  font-size: var(--Font-Desktop-paragraph);
+  width: 15rem;
+  background-color: var(--color-Primary-red);
+  padding-block: 1.4rem;
+  border-radius: 5rem;
+  box-shadow: 0rem 0.6rem 1.8rem 0rem var(--shadow-Primary-red);
+  color: var(--color-Primary-white);
+  transition: var(--Timing-default);
+  z-index: 1;
+  @media (max-width: 720px) {
+    width: 80%;
+  }
+}
+.subscribe-bt:hover {
+  background-color: #ffffff;
+  color: var(--color-Primary-red);
+}

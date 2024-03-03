@@ -1,0 +1,10 @@
+@mixin primary-button {
+  text-align: center;
+  font-size: var(--Font-Desktop-paragraph);
+  width: 15rem;
+  background-color: var(--color-Primary-red);
+  padding-block: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.6rem 1.8rem 0rem var(--shadow-Primary-red);
+  color: var(--color-Primary-white);
+}

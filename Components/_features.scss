@@ -1,0 +1,26 @@
+/* Features */
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Gap-Desktop-Xsl);
+  @media (max-width: 720px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.feature__list__item {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-wrap: wrap;
+  gap: var(--Gap-Desktop-Xsl);
+  @media (max-width: 720px) {
+    text-align: start;
+    width: 100%;
+  }
+  @media (max-width: 380px) {
+    padding-block: 1rem;
+  }
+}
+/* End Features*/
